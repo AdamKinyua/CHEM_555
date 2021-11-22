@@ -12,8 +12,8 @@ endif
 
 all: compile
 
-compile: test.f03
-	$(FC) $(FCFLAGS) $(MQCOBJS) -o test.exe test.f03 $(LIBS)
+compile: workshop_4.f03
+	$(FC) $(FCFLAGS) $(MQCOBJS) -o workshop_4.exe workshop_4.f03 $(LIBS)
 
 clean:
 	rm -f test.exe test.o
