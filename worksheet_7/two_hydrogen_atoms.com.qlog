@@ -1,0 +1,24 @@
+----------------------------------------
+Begin PBS Prologue Fri Nov  5 11:02:07 EDT 2021 1636124527
+Job ID:		23600334.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node024
+End PBS Prologue Fri Nov  5 11:02:07 EDT 2021 1636124527
+----------------------------------------
+/var/spool/torque/mom_priv/jobs/23600334.queuesrv1.SC: line 22: two_hydrogen_atoms.com: No such file or directory
+----------------------------------------
+Begin PBS Epilogue Fri Nov  5 11:02:13 EDT 2021 1636124533
+Job ID:		23600334.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-two_hydrogen_atoms.com
+Session:	17650
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:00,mem=0kb,vmem=0kb,walltime=00:00:01
+Queue:		short
+Account:		
+Nodes:	node024
+
+End PBS Epilogue Fri Nov  5 11:02:13 EDT 2021 1636124533
+----------------------------------------

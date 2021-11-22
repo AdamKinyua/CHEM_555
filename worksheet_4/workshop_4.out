@@ -1,0 +1,89 @@
+ Nuclear Repulsion Energy (au) =       0.755967
+           NUCLEAR CARTESIAN COORDINATES          
+ -------------------------------------------------
+  Element              Coordinates (Ang)           
+                 X             Y             Z
+ -------------------------------------------------
+     H       0.000000      0.000000      0.000000
+     H       0.000000      0.000000      0.700000
+ -------------------------------------------------
+ 
+ nBasis =              2
+ 
+ nAlpha =              1
+ 
+ nBeta =              1
+ 
+ nElectrons =              2
+ 
+ Charge =              0
+ 
+ Multiplicity =              1
+ 
+Wavefunction Type = R                                                                                                                                                                                                                                                               
+Complex   =          F
+ 
+ Overlap matrix
+ 
+   The matrix being printed is symmetric
+                  1             2
+       1      1.000000
+       2      0.686089      1.000000
+ 
+ Core Hamiltonian matrix
+ 
+   The matrix being printed is symmetric
+                  1             2
+       1     -1.147650
+       2     -1.006924     -1.147650
+ 
+ Orbital Energies
+ 
+       1       -0.595463
+       2        0.714165
+ 
+ Molecular orbital coefficients
+ 
+                  1             2
+       1      0.544559      1.262066
+       2      0.544559     -1.262066
+ 
+ Density matrix
+ 
+   The matrix being printed is symmetric
+                  1             2
+       1      0.296544
+       2      0.296544      0.296544
+ 
+ SCF Density matrix
+ 
+   The matrix being printed is symmetric
+                  1             2
+       1      0.296544
+       2      0.296544      0.296544
+ 
+ Fock matrix
+ 
+   The matrix being printed is symmetric
+                  1             2
+       1     -0.389910
+       2     -0.614094     -0.389910
+ 
+ AO 2ERIs
+ Regular 2ERIs
+ (  1,  1|  1,  1) =      0.77460594
+ (  1,  1|  1,  2) =      0.46762065
+ (  1,  1|  2,  1) =      0.46762065
+ (  1,  1|  2,  2) =      0.58512264
+ (  1,  2|  1,  1) =      0.46762065
+ (  1,  2|  1,  2) =      0.32485800
+ (  1,  2|  2,  1) =      0.32485800
+ (  1,  2|  2,  2) =      0.46762065
+ (  2,  1|  1,  1) =      0.46762065
+ (  2,  1|  1,  2) =      0.32485800
+ (  2,  1|  2,  1) =      0.32485800
+ (  2,  1|  2,  2) =      0.46762065
+ (  2,  2|  1,  1) =      0.58512264
+ (  2,  2|  1,  2) =      0.46762065
+ (  2,  2|  2,  1) =      0.46762065
+ (  2,  2|  2,  2) =      0.77460594

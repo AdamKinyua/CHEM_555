@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Wed Nov  3 16:41:07 EDT 2021 1635972067
+Job ID:		23600156.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node086
+End PBS Prologue Wed Nov  3 16:41:07 EDT 2021 1635972067
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Wed Nov  3 16:41:16 EDT 2021 1635972076
+Job ID:		23600156.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-hydrogen_atoms.com
+Session:	27774
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:11,mem=101648kb,vmem=14868392kb,walltime=00:00:04
+Queue:		short
+Account:		
+Nodes:	node086
+
+End PBS Epilogue Wed Nov  3 16:41:16 EDT 2021 1635972076
+----------------------------------------
