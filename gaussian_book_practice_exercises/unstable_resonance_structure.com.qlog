@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Wed Nov 17 11:00:08 EST 2021 1637164808
+Job ID:		23603120.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node095
+End PBS Prologue Wed Nov 17 11:00:08 EST 2021 1637164808
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Wed Nov 17 11:00:17 EST 2021 1637164817
+Job ID:		23603120.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-unstable_resonance_structure.com
+Session:	19941
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:19,mem=508040kb,vmem=14994372kb,walltime=00:00:04
+Queue:		short
+Account:		
+Nodes:	node095
+
+End PBS Epilogue Wed Nov 17 11:00:17 EST 2021 1637164817
+----------------------------------------
