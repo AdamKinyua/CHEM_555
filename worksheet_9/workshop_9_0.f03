@@ -14,14 +14,16 @@
     type(mqc_molecule_data)::moleculeInfo
     type(mqc_twoERIs)::eris,mo_ERIs
     type(mqc_scf_integral ):: mo_core_ham
-    type(mqc_scalar ):: Vnn,alpha_one_energy,beta_one_energy,alpha_two_energy_ss,& beta_two_energy_ss,two_energy_os,final_energy
-I
-!Get the user_defined filename from the command line and then call the routine that reads the Gaussian matrix file.
+    type(mqc_scalar ):: Vnn,alpha_one_energy,beta_one_energy,alpha_two_energy_ss,& 
+        beta_two_energy_ss,two_energy_os,final_energy
 !
+!Get the user_defined filename from the command line and then call the 
+!routine that reads the Gaussian matrix file.
+!i
     call mqc_get_command_argument(1,fileName)
     call fileInfo %load(filename)
-    call fileInfo %getESTObj('wavefunction',wavefunction) fileInfo
-    call %getMolData(moleculeInfo)
+    call fileInfo %getESTObj('wavefunction',wavefunction)
+    call fileInfo %getMolData(moleculeInfo)
     call fileInfo %get2ERIs('regular',eris)
 !
 ! Determine if the wavefunction that we read in was restricted or unrestricted.
@@ -46,21 +48,22 @@ I
 !
 ! Transform one and two-electron integrals to MO basis. These are the hij, Jij, Kij terms
 !
-    if(iPrint.eq.1) write(iOut,*) 'Transforming MO integrals'
-      mo_core_ham = matmul(transpose(wavefunction%MO Coefficients),&
+    if (iPrint.eq.1) write(iOut,*) 'Transforming MO integrals'
+    mo_core_ham = matmul(transpose(wavefunction%MO_Coefficients),&
       matmul(wavefunction%core_Hamiltonian, &
-      wavefunction%MO-Coefficients))
+      wavefunction%MO_Coefficients))
     if(IPrint.ge.2) call mo_core_ham%print(iOut,'MO Basis Core Hamiltonian') 
     call twoERI_trans(iOut,iPrint,wavefunction%MO_Coefficients,ERIs,mo_ERIs)
 !
 !Compute Slater determinant Energy 
 !For restricted , E = 2*sum_{i}hii + 2*sum_{ij}Jij - sum_{ij}Kij
-!For unrestricted , E = sum_{i}hiaia + sum_{i}hibib + sum_{ij}Jiaja + sum_{ij}Jibjb + 2*sum_{ij}Jiajb - sum_{ij}Kiaja - sum_{ij}Kibjb
+!For unrestricted , E = sum_{i}hiaia + sum_{i}hibib + sum_{ij}Jiaja + sum_{ij}Jibjb + 
+!                       2*sum_{ij}Jiajb - sum_{ij}Kiaja - sum_{ij}Kibjb
 !
 ! one-electron term
     alpha_one_energy = 0.0
     do IAlpha = 1, NAlpha
-      alpha one energy = alpha_one_energy + mo_core_ham%at(IAlpha,IAlpha,'alpha') 
+      alpha_one_energy = alpha_one_energy + mo_core_ham%at(IAlpha,IAlpha,'alpha') 
     endDo
     if (.not.UHF) then
       alpha_one_energy = 2*alpha_one_energy
@@ -71,13 +74,13 @@ I
       endDo
     endIf
     call alpha_one_energy%print(iOut,'Alpha one electron energy: haa')
-    If(UHF) call beta_one_energy%print(iOut,'Beta one electron energy: hbb')
+    If (UHF) call beta_one_energy%print(iOut,'Beta one electron energy: hbb')
 !
 !two-electron same-spin term 
     alpha_two_energy_ss = 0.0
     do IAlpha = 1, NAlpha
       do JAlpha = IAlpha+1, NAlpha
-        alpha_two_energy_ss = alph_two_energy_ss + &
+        alpha_two_energy_ss = alpha_two_energy_ss + &
           mo_ERIs%at(IAlpha,IAlpha,JAlpha,JAlpha,'alpha') - &
               mo_ERIs%at(IAlpha,JAlpha,JAlpha,IAlpha,'alpha') 
       endDo
@@ -94,6 +97,8 @@ I
           endDo
       endDo 
     endIf
+    call alpha_two_energy_ss%print(iOut,'Alpha same spin two electron energy: Jaa - Kaa')
+    if (UHF) call beta_two_energy_ss%print(iOut,'Beta same spin two electron energy: Jbb - Kbb')
 !
 ! two-electron opposite-spin term
 two_energy_os = 0.0
@@ -118,6 +123,7 @@ call two_energy_os%print(iOut,'Opposite spin two electron energy (Coulomb only):
     endIf
   call final_energy%print(iOut,'Total electronic energy')
 !
+  final_energy = Vnn + final_energy
   call final_energy%print(iOut,'Total electronic energy + nuclear repulsion energy') 
 !
 End Program SDEnergy
