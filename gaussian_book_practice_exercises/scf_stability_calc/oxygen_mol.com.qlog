@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Mon Dec 13 16:39:33 EST 2021 1639431573
+Job ID:		23627254.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node498
+End PBS Prologue Mon Dec 13 16:39:33 EST 2021 1639431573
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Mon Dec 13 16:39:44 EST 2021 1639431584
+Job ID:		23627254.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-oxygen_mol.com
+Session:	23811
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:14,mem=239972kb,vmem=2340604kb,walltime=00:00:06
+Queue:		short
+Account:		
+Nodes:	node498
+
+End PBS Epilogue Mon Dec 13 16:39:44 EST 2021 1639431584
+----------------------------------------

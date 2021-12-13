@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Mon Dec 13 11:31:52 EST 2021 1639413112
+Job ID:		23626241.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node156
+End PBS Prologue Mon Dec 13 11:31:52 EST 2021 1639413112
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Mon Dec 13 11:32:05 EST 2021 1639413125
+Job ID:		23626241.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-methane_NMR.com
+Session:	6176
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:27,mem=0kb,vmem=0kb,walltime=00:00:08
+Queue:		short
+Account:		
+Nodes:	node156
+
+End PBS Epilogue Mon Dec 13 11:32:05 EST 2021 1639413125
+----------------------------------------

@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Mon Dec 13 11:06:21 EST 2021 1639411581
+Job ID:		23626222.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node127
+End PBS Prologue Mon Dec 13 11:06:21 EST 2021 1639411581
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Mon Dec 13 11:06:33 EST 2021 1639411593
+Job ID:		23626222.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-formaldehyde.com
+Session:	4884
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:17,mem=6512kb,vmem=2349460kb,walltime=00:00:07
+Queue:		short
+Account:		
+Nodes:	node127
+
+End PBS Epilogue Mon Dec 13 11:06:33 EST 2021 1639411593
+----------------------------------------
