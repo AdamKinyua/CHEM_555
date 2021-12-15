@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Tue Dec 14 12:31:25 EST 2021 1639503085
+Job ID:		23629305.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node458
+End PBS Prologue Tue Dec 14 12:31:25 EST 2021 1639503085
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Tue Dec 14 12:31:34 EST 2021 1639503094
+Job ID:		23629305.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-carbon_scf_stability_calcs_triplet.com
+Session:	31089
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:00:14,mem=0kb,vmem=0kb,walltime=00:00:04
+Queue:		short
+Account:		
+Nodes:	node458
+
+End PBS Epilogue Tue Dec 14 12:31:34 EST 2021 1639503094
+----------------------------------------

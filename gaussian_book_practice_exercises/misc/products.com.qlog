@@ -1,0 +1,23 @@
+----------------------------------------
+Begin PBS Prologue Wed Nov 17 09:54:13 EST 2021 1637160853
+Job ID:		23602968.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Nodes:		node091
+End PBS Prologue Wed Nov 17 09:54:13 EST 2021 1637160853
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Wed Nov 17 09:54:39 EST 2021 1637160879
+Job ID:		23602968.queuesrv1
+Username:	amkiny01
+Group:		unixuser
+Job Name:	Job-products.com
+Session:	10755
+Limits:		mem=12gb,ncpus=8,walltime=24:00:00
+Resources:	cput=00:02:00,mem=0kb,vmem=0kb,walltime=00:00:21
+Queue:		short
+Account:		
+Nodes:	node091
+
+End PBS Epilogue Wed Nov 17 09:54:39 EST 2021 1637160879
+----------------------------------------

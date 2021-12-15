@@ -1,0 +1,262 @@
+************************************************************
+This is node091 of the Cardinal research cluster.
+Date: Wed Nov 17 10:04:10 EST 2021
+************************************************************
+ Set GAUSS_MDEF to "12GB".
+ Set GAUSS_PDEF to "8".
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /usr/local/g16reva03/legacy_cpu/g16/l1.exe "/scratch/global/amkiny01/Gau-12593.inp" -scrdir="/scratch/global/amkiny01/"
+ Default is to use a total of   8 processors:
+                                8 via shared-memory
+                                1 via Linda
+ Entering Link 1 = /usr/local/g16reva03/legacy_cpu/g16/l1.exe PID=     12594.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  EM64L-G16RevA.03 25-Dec-2016
+                17-Nov-2021 
+ ******************************************
+ %chk=transitional_structures.chk
+ --------------------------------------
+ #T UHF/STO-3G Opt=(QST2,path=3) nosymm
+ --------------------------------------
+ --------
+ reactant
+ --------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 2
+ C                    -0.95934   0.35568   0.00526 
+ H                    -0.591    -0.67302   0.01283 
+ H                    -0.59766   0.84586  -0.90295 
+ H                    -2.05254   0.33168  -0.01257 
+ O                    -0.46208   1.00517   1.19138 
+ 
+ -------
+ product
+ -------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 2
+ O                    -0.14564   0.38299   0.68295 
+ C                     0.02896   0.04929  -0.65949 
+ H                     0.68859   0.09658   1.13174 
+ H                     1.02111   0.16541  -1.09473 
+ H                    -0.81571   0.33133  -1.28288 
+ 
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +         3-point reaction path relaxation                                 +
+ +           reactant structure will be optimized                           +
+ +           product structure will be optimized                            +
+ +           point with highest energy will optimize to TS                  +
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Initialization pass.
+                           ----------------------------
+                           !    Initial Parameters    !
+                           ! (Angstroms and Degrees)  !
+ --------------------------                            --------------------------
+ ! Name  Definition              Value          Derivative Info.                !
+ --------------------------------------------------------------------------------
+ ! R1    R(1,2)                  1.0927         estimate D2E/DX2                !
+ ! R2    R(1,3)                  1.0936         estimate D2E/DX2                !
+ ! R3    R(1,4)                  1.0936         estimate D2E/DX2                !
+ ! R4    R(1,5)                  1.4408         estimate D2E/DX2                !
+ ! R5    R(2,4)                  1.7737         estimate D2E/DX2                !
+ ! R6    R(2,5)                  2.0547         estimate D2E/DX2                !
+ ! A1    A(2,1,3)              108.4365         estimate D2E/DX2                !
+ ! A2    A(2,1,4)              108.4465         estimate D2E/DX2                !
+ ! A3    A(2,1,5)              107.5981         estimate D2E/DX2                !
+ ! A4    A(3,1,4)              109.0812         estimate D2E/DX2                !
+ ! A5    A(3,1,5)              111.5604         estimate D2E/DX2                !
+ ! A6    A(4,1,5)              111.6108         estimate D2E/DX2                !
+ ! A7    A(1,2,4)               35.7943         estimate D2E/DX2                !
+ ! A8    A(1,2,5)               41.9443         estimate D2E/DX2                !
+ ! A9    A(4,2,5)               66.2519         estimate D2E/DX2                !
+ ! D1    D(3,1,2,4)           -118.3238         estimate D2E/DX2                !
+ ! D2    D(3,1,2,5)            120.8051         estimate D2E/DX2                !
+ ! D3    D(2,1,4,3)           -117.9141         estimate D2E/DX2                !
+ ! D4    D(2,1,5,3)            118.8207         estimate D2E/DX2                !
+ ! D5    D(2,1,5,4)           -118.8621         estimate D2E/DX2                !
+ ! D6    D(3,1,5,4)            122.3172         estimate D2E/DX2                !
+ ! D7    D(1,2,4,5)            -38.8132         estimate D2E/DX2                !
+ --------------------------------------------------------------------------------
+ Number of steps in this run=     32 maximum allowed number of steps=    100.
+ Search for a saddle point of order  1.
+ Iteration  1 RMS(Cart)=  0.09598740 RMS(Int)=  0.61569131
+ Iteration  2 RMS(Cart)=  0.07595893 RMS(Int)=  0.57410743
+ Iteration  3 RMS(Cart)=  0.06444493 RMS(Int)=  0.54798942
+ Iteration  4 RMS(Cart)=  0.05385800 RMS(Int)=  0.53259338
+ Iteration  5 RMS(Cart)=  0.05174615 RMS(Int)=  0.52673357
+ Iteration  6 RMS(Cart)=  0.04694044 RMS(Int)=  0.52784655
+ Iteration  7 RMS(Cart)=  0.03648454 RMS(Int)=  0.53219159
+ Iteration  8 RMS(Cart)=  0.01332900 RMS(Int)=  0.53511675
+ Iteration  9 RMS(Cart)=  0.00748245 RMS(Int)=  0.53663621
+ Iteration 10 RMS(Cart)=  0.00606691 RMS(Int)=  0.53749044
+ Iteration 11 RMS(Cart)=  0.00515870 RMS(Int)=  0.53829275
+ Iteration 12 RMS(Cart)=  0.00411177 RMS(Int)=  0.53902406
+ Iteration 13 RMS(Cart)=  0.00332950 RMS(Int)=  0.53964612
+ Iteration 14 RMS(Cart)=  0.00268025 RMS(Int)=  0.54016265
+ Iteration 15 RMS(Cart)=  0.00214573 RMS(Int)=  0.54058298
+ Iteration 16 RMS(Cart)=  0.00155388 RMS(Int)=  0.54080543
+ Iteration 17 RMS(Cart)=  0.00112067 RMS(Int)=  0.54092288
+ Iteration 18 RMS(Cart)=  0.00078453 RMS(Int)=  0.54098856
+ Iteration 19 RMS(Cart)=  0.00054512 RMS(Int)=  0.54102150
+ Iteration 20 RMS(Cart)=  0.00037951 RMS(Int)=  0.54103229
+ Iteration 21 RMS(Cart)=  0.00026738 RMS(Int)=  0.54102785
+ Iteration 22 RMS(Cart)=  0.00019370 RMS(Int)=  0.54101296
+ Iteration 23 RMS(Cart)=  0.00014778 RMS(Int)=  0.54099100
+ Iteration 24 RMS(Cart)=  0.00012150 RMS(Int)=  0.54096430
+ Iteration 25 RMS(Cart)=  0.00010808 RMS(Int)=  0.54093454
+ Iteration 26 RMS(Cart)=  0.00010210 RMS(Int)=  0.54090286
+ Iteration 27 RMS(Cart)=  0.00009989 RMS(Int)=  0.54087008
+ Iteration 28 RMS(Cart)=  0.00009936 RMS(Int)=  0.54083676
+ Iteration 29 RMS(Cart)=  0.00009951 RMS(Int)=  0.54080328
+ Iteration 30 RMS(Cart)=  0.00009989 RMS(Int)=  0.54076991
+ Iteration 31 RMS(Cart)=  0.00010029 RMS(Int)=  0.54073685
+ Iteration 32 RMS(Cart)=  0.00010067 RMS(Int)=  0.54070423
+ Iteration 33 RMS(Cart)=  0.00010099 RMS(Int)=  0.54067212
+ Iteration 34 RMS(Cart)=  0.00010127 RMS(Int)=  0.54064061
+ Iteration 35 RMS(Cart)=  0.00010151 RMS(Int)=  0.54060972
+ Iteration 36 RMS(Cart)=  0.00010171 RMS(Int)=  0.54057950
+ Iteration 37 RMS(Cart)=  0.00010189 RMS(Int)=  0.54054997
+ Iteration 38 RMS(Cart)=  0.00010206 RMS(Int)=  0.54052113
+ Iteration 39 RMS(Cart)=  0.00010221 RMS(Int)=  0.54049301
+ Iteration 40 RMS(Cart)=  0.00010235 RMS(Int)=  0.54046561
+ Iteration 41 RMS(Cart)=  0.00010248 RMS(Int)=  0.54043894
+ Iteration 42 RMS(Cart)=  0.00010261 RMS(Int)=  0.54041300
+ Iteration 43 RMS(Cart)=  0.00010273 RMS(Int)=  0.54038780
+ Iteration 44 RMS(Cart)=  0.00010284 RMS(Int)=  0.54036334
+ Iteration 45 RMS(Cart)=  0.00010295 RMS(Int)=  0.54033962
+ Iteration 46 RMS(Cart)=  0.00010306 RMS(Int)=  0.54031664
+ Iteration 47 RMS(Cart)=  0.00010316 RMS(Int)=  0.54029442
+ Iteration 48 RMS(Cart)=  0.00010326 RMS(Int)=  0.54027294
+ Iteration 49 RMS(Cart)=  0.00010336 RMS(Int)=  0.54025221
+ Iteration 50 RMS(Cart)=  0.00010345 RMS(Int)=  0.54023223
+ Iteration 51 RMS(Cart)=  0.00010354 RMS(Int)=  0.54021301
+ Iteration 52 RMS(Cart)=  0.00010362 RMS(Int)=  0.54019453
+ Iteration 53 RMS(Cart)=  0.00010371 RMS(Int)=  0.54017682
+ Iteration 54 RMS(Cart)=  0.00010378 RMS(Int)=  0.54015985
+ Iteration 55 RMS(Cart)=  0.00010386 RMS(Int)=  0.54014364
+ Iteration 56 RMS(Cart)=  0.00010393 RMS(Int)=  0.54012819
+ Iteration 57 RMS(Cart)=  0.00010400 RMS(Int)=  0.54011349
+ Iteration 58 RMS(Cart)=  0.00010406 RMS(Int)=  0.54009954
+ Iteration 59 RMS(Cart)=  0.00010412 RMS(Int)=  0.54008636
+ Iteration 60 RMS(Cart)=  0.00010418 RMS(Int)=  0.54007392
+ Iteration 61 RMS(Cart)=  0.00010423 RMS(Int)=  0.54006225
+ Iteration 62 RMS(Cart)=  0.00010428 RMS(Int)=  0.54005133
+ Iteration 63 RMS(Cart)=  0.00010433 RMS(Int)=  0.54004117
+ Iteration 64 RMS(Cart)=  0.00010437 RMS(Int)=  0.54003176
+ Iteration 65 RMS(Cart)=  0.00010441 RMS(Int)=  0.54002310
+ Iteration 66 RMS(Cart)=  0.00010445 RMS(Int)=  0.54001520
+ Iteration 67 RMS(Cart)=  0.00010448 RMS(Int)=  0.54000805
+ Iteration 68 RMS(Cart)=  0.00010451 RMS(Int)=  0.54000166
+ Iteration 69 RMS(Cart)=  0.00010453 RMS(Int)=  0.53999601
+ Iteration 70 RMS(Cart)=  0.00010455 RMS(Int)=  0.53999112
+ Iteration 71 RMS(Cart)=  0.00010457 RMS(Int)=  0.53998697
+ Iteration 72 RMS(Cart)=  0.00010458 RMS(Int)=  0.53998357
+ Iteration 73 RMS(Cart)=  0.00010459 RMS(Int)=  0.53998092
+ Iteration 74 RMS(Cart)=  0.00010459 RMS(Int)=  0.53997902
+ Iteration 75 RMS(Cart)=  0.00010459 RMS(Int)=  0.53997785
+ Iteration 76 RMS(Cart)=  0.00010459 RMS(Int)=  0.53997743
+ Iteration 77 RMS(Cart)=  0.00010459 RMS(Int)=  0.53997775
+ Iteration 78 RMS(Cart)=  0.00010457 RMS(Int)=  0.53997881
+ Iteration 79 RMS(Cart)=  0.00010456 RMS(Int)=  0.53998060
+ Iteration 80 RMS(Cart)=  0.00010454 RMS(Int)=  0.53998313
+ Iteration 81 RMS(Cart)=  0.00010452 RMS(Int)=  0.53998638
+ Iteration 82 RMS(Cart)=  0.00010449 RMS(Int)=  0.53999037
+ Iteration 83 RMS(Cart)=  0.00010446 RMS(Int)=  0.53999508
+ Iteration 84 RMS(Cart)=  0.00010443 RMS(Int)=  0.54000052
+ Iteration 85 RMS(Cart)=  0.00010439 RMS(Int)=  0.54000668
+ Iteration 86 RMS(Cart)=  0.00010435 RMS(Int)=  0.54001356
+ Iteration 87 RMS(Cart)=  0.00010430 RMS(Int)=  0.54002115
+ Iteration 88 RMS(Cart)=  0.00010425 RMS(Int)=  0.54002946
+ Iteration 89 RMS(Cart)=  0.00010420 RMS(Int)=  0.54003848
+ Iteration 90 RMS(Cart)=  0.00010414 RMS(Int)=  0.54004820
+ Iteration 91 RMS(Cart)=  0.00010408 RMS(Int)=  0.54005863
+ Iteration 92 RMS(Cart)=  0.00010402 RMS(Int)=  0.54006975
+ Iteration 93 RMS(Cart)=  0.00010395 RMS(Int)=  0.54008158
+ Iteration 94 RMS(Cart)=  0.00010387 RMS(Int)=  0.54009410
+ Iteration 95 RMS(Cart)=  0.00010380 RMS(Int)=  0.54010730
+ Iteration 96 RMS(Cart)=  0.00010372 RMS(Int)=  0.54012120
+ Iteration 97 RMS(Cart)=  0.00010363 RMS(Int)=  0.54013577
+ Iteration 98 RMS(Cart)=  0.00010354 RMS(Int)=  0.54015102
+ Iteration 99 RMS(Cart)=  0.00010345 RMS(Int)=  0.54016695
+ Iteration100 RMS(Cart)=  0.00010335 RMS(Int)=  0.54018355
+ New curvilinear step not converged.
+ ***** Convergence failure in GTrPth2 *****
+ Try using 3 structures as input for
+ QST transition state search
+ Error termination via Lnk1e in /usr/local/g16reva03/legacy_cpu/g16/l103.exe at Wed Nov 17 10:04:12 2021.
+ Job cpu time:       0 days  0 hours  0 minutes  8.0 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  1.2 seconds.
+ File lengths (MBytes):  RWF=     72 Int=      0 D2E=      0 Chk=      8 Scr=      8
